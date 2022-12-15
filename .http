@@ -1,0 +1,22 @@
+###
+GET http://localhost:5006/api/users/names
+###
+GET http://localhost:5006/api/user/emails
+###
+GET http://localhost:5006/api/users/address
+
+###
+POST http://localhost:5006/api/users
+Content-Type: application/json
+
+{
+    "name": "Alice Smith",
+    "email": "alice@email.com",
+    "adress": [{
+        "street":"Kengsington",
+        "postal-code":5251,
+        "city":"London"
+    }]
+}
+###
+GET http://localhost:5006/api/users
